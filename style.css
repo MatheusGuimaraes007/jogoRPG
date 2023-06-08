@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ficha {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#char {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#cenario {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #043247;
+}
+
+img {
+    width: 300px;
+}
+
+.img-monster img {
+    transform: rotateY(180deg);
+}
+
+.lifebar {
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.lifebar .bar {
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+}
+
+strong {
+    font-size: 20px;
+    color: white;
+}
+
+.lutadores {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.log {
+    border: 1px dotted #999;
+    height: 200px;
+    width: 400px;
+    overflow-y: scroll;
+    color: white;
+}

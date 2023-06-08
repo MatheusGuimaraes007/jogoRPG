@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="ficha">
+            <form id="char">
+                <fieldset>
+                    <legend>Criação de personagem</legend>
+                    <label for="name">Nome do personagem</label>
+                    <input type="text" id="name" name="name">
+                    <label for="class">Classe</label>
+                    <select name="class" id="class">
+                        <option value="barbaro">Barbaro</option>
+                        <option value="Sorcerer">Mago</option>
+                    </select>
+                    <label for="monster">Escolha o monstro que deseja lutar</label>
+                    <select name="monster" id="monsters">
+                        <option value="monster1">Orc</option>
+                        <option value="monster2">Drow</option>
+                    </select>
+                    <input type="submit" value="Iniciar" id="sendChar">
+                </fieldset>
+            </form>
+        </div>
+        <!-- Cenário #043247 -->
+        <div class="lutadores">
+            <h1>--</h1>
+        </div>
+        <div id="cenario">
+            <div id="fighter">
+                <div class="char1">
+                    <div class="lifebar">
+                        <div class="bar" style="width: 0;"></div>
+                    </div>
+                    <strong class="nome-lutador">--</strong>
+                    <div>
+                        <button class="attackButton">Atacar</button>
+                    </div>
+                    <div class="img-char">
+                        <img src="img/b4c94a3630dd4375639d508c195147f8.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <ul class="log"></ul>
+            <div id="mob">
+                <div class="char1">
+                    <div class="lifebar">
+                        <div class="bar" style="width: 0;"></div>
+                    </div>
+                    <strong class="nome-lutador">--</strong>
+                    <div>
+                        <button class="attackButton">Atacar</button>
+                    </div>
+                    <div class="img-monster">
+                        <img src="img/c11860b4b9e9b179b1b8dbc2ce640839.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="module" src="assets/Stage.js"></script>
+</body>
+
+</html>
